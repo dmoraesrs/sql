@@ -73,3 +73,13 @@ INCLUDE ([IdBiblioteca]);
 SELECT * FROM sys.dm_db_index_usage_stats 
 WHERE object_id = OBJECT_ID('dbo.SUA_TABELA')
 
+
+
+CREATE NONCLUSTERED INDEX IX_MedicoUnidadeUsuario_IdMedico_Deletado
+ON [skanestesio-p01].[dbo].[MedicoUnidadeUsuario] ([IdMedico], [Deletado]);
+
+
+SELECT TOP 1 * FROM [skanestesio-p01].[dbo].[MedicoUnidadeUsuario];
+
+
+
