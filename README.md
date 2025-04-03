@@ -41,3 +41,19 @@ SELECT
 FROM sys.dm_exec_requests r
 CROSS APPLY sys.dm_exec_sql_text(r.sql_handle) t
 WHERE r.session_id IN (56, 87, 102, 106);
+
+
+
+
+
+SELECT 
+    migs.user_seeks,
+    mid.statement AS tabela,
+    mid.equality_columns,
+    mid.inequality_columns,
+    mid.included_columns
+FROM sys.dm_db_missing_index_groups mig
+JOIN sys.dm_db_missing_index_group_stats migs ON mig.index_group_handle = migs.group_handle
+JOIN sys.dm_db_missing_index_details mid ON mig.index_handle = mid.index_handle
+ORDER BY migs.user_seeks DESC;
+
