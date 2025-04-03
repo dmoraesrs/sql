@@ -57,3 +57,19 @@ JOIN sys.dm_db_missing_index_group_stats migs ON mig.index_group_handle = migs.g
 JOIN sys.dm_db_missing_index_details mid ON mig.index_handle = mid.index_handle
 ORDER BY migs.user_seeks DESC;
 
+
+
+CREATE NONCLUSTERED INDEX IX_MedicoUnidadeUsuario_IdMedico_Deletado
+ON [skanestesio-p01].[dbo].[MedicoUnidadbo.SUA_TABELAdMedico], [Deletado]);
+
+CREATE NONCLUSTERED INDEX IX_AtendimentoPreProcedimento_IdAtendimentoPre
+ON [skanestesio-p01].[dbo].[AtendimentoPreProcedimento] ([IdAtendimentoPre]);
+
+CREATE NONCLUSTERED INDEX IX_Procedimento_IdIntegracao_Deletado
+ON [skanestesio-p01].[dbo].[Procedimento] ([IdIntegracao], [Deletado])
+INCLUDE ([IdBiblioteca]);
+
+
+SELECT * FROM sys.dm_db_index_usage_stats 
+WHERE object_id = OBJECT_ID('dbo.SUA_TABELA')
+
