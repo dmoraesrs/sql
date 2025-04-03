@@ -1,0 +1,66 @@
+186675	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdMedico], [Deletado]	NULL	NULL
+27880	[skanestesio-p01].[dbo].[AtendimentoPreProcedimento]	[IdAtendimentoPre]	NULL	NULL
+27792	[skanestesio-p01].[dbo].[AtendimentoPreConvenio]	[IdAtendimentoPre]	NULL	NULL
+25870	[skanestesio-p01].[dbo].[Procedimento]	[IdIntegracao], [Deletado]	NULL	[IdBiblioteca]
+24814	[skanestesio-p01].[dbo].[AtendimentoPre]	[IdAtendimento]	NULL	[IdAgendamento]
+24608	[skanestesio-p01].[dbo].[AtendimentoAnestesico]	[IdAtendimento], [Deletado]	NULL	NULL
+24461	[skanestesio-p01].[dbo].[Paciente]	[IdEmpresaUnidade], [Deletado]	NULL	[IdIntegracao], [Nome], [Identificador], [NomeSocial], [NomeMae], [Genero], [DataNascimento], [Identidade], [OrgaoEmissor], [DataEmissaoIdentidade], [SUS], [CondicaoSocial], [IdOcupacao], [Logradouro], [NumeroEndereco], [Bairro], [CEP], [Ativo], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm], [Cidade], [SiglaPais], [SiglaEstado], [Complemento], [Estado], [Pais], [PacienteSemIdentificacao], [PacienteEstrangeiro]
+24395	[skanestesio-p01].[dbo].[Procedimento]	[IdIntegracao], [Deletado]	NULL	[IdBiblioteca], [IdSubGrupo], [Codigo], [Nome], [PorteCirurgico], [ValorOperacao], [NumeroAuxiliares], [PorteAnestesico], [Ativo], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm]
+15137	[skanestesio-p01].[dbo].[Medico]	[CRM], [Deletado]	NULL	NULL
+10900	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdEmpresaUnidade], [Deletado]	NULL	[IdMedico]
+7695	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdEmpresaUnidade], [IdUsuario], [Deletado]	NULL	NULL
+6130	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdEmpresaUnidade], [IdMedico], [Deletado]	NULL	NULL
+5159	[skanestesio-p01].[dbo].[AtendimentoPre]	[IdAtendimento]	NULL	NULL
+5152	[skanestesio-p01].[dbo].[AtendimentoAnestesico]	[IdAtendimento]	NULL	NULL
+5116	[skanestesio-p01].[dbo].[AtendimentoPre]	[IdAtendimento]	NULL	[IdAgendamento], [DataInicio], [DataFim], [EstadoFisico], [Emergencia], [PacientePeso], [PacienteAltura], [Lateralidade], [Deletado], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm], [Finalizado], [UpgradeAccommodation]
+5116	[skanestesio-p01].[dbo].[AtendimentoAnestesico]	[IdAtendimento]	NULL	[IdAgendamento], [CodigoAtendimento], [IdBloco], [IdSala], [IdLeito], [Origem], [Antibioticoterapia], [Antibioticoprofilaxia], [Deletado], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm], [Localizacao], [IdLocalizacao], [Tiss]
+4198	[skanestesio-p01].[dbo].[AtendimentoAnestesicoDados]	[IdAtendimentoAnestesico], [Deletado]	NULL	NULL
+2863	[skauth-p01].[dbo].[UsuarioUnidade]	[IdUsuario], [Ativo], [Deletado]	[IdUnidade]	NULL
+2415	[rdsadmin].[dbo].[log_backup_manifest]	[family_guid]	[lifecycle]	[rds_sequence_id], [backup_round_id], [database_name], [file_size_bytes], [first_lsn], [last_lsn], [database_state], [database_recovery_model], [s3_metadata_file_content]
+1774	[skanestesio-p01].[dbo].[IntegracaoAtendimento]	NULL	[Status], [ModificadoEm]	[TipoIntegracao]
+1773	[skanestesio-p01].[dbo].[IntegracaoAtendimento]	NULL	[Status], [ModificadoEm]	NULL
+1609	[skanestesio-p01].[dbo].[AtendimentoPre]	[IdAtendimento], [Deletado]	NULL	NULL
+1357	[skanestesio-p01].[dbo].[AtendimentoPreEquipe]	[IdAtendimentoPre]	NULL	[Principal], [Deletado], [ModificadoPor], [ModificadoEm], [CriadoPor], [CriadoEm], [IdMedico], [IdProfissional]
+1357	[skanestesio-p01].[dbo].[AtendimentoPreConvenio]	[IdAtendimentoPre]	NULL	[IdConvenio], [Matricula], [Senha], [Validade], [Foto], [Deletado], [ModificadoPor], [ModificadoEm], [CriadoPor], [CriadoEm]
+1357	[skanestesio-p01].[dbo].[AtendimentoPreProcedimento]	[IdAtendimentoPre]	NULL	[IdProcedimento], [Via], [Emergencia], [Descritivo], [Deletado], [ModificadoPor], [ModificadoEm], [CriadoPor], [CriadoEm], [Robotica]
+1309	[skauth-p01].[dbo].[ParametroSistemaUnidade]	[IdUnidade]	NULL	[IdSistema], [Chave], [Tipo], [VString], [VLogico], [VNumerico], [VData], [DataExpiracao], [Ativo], [Deletado], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm]
+920	[skanestesio-p01].[dbo].[Procedimento]	[IdBiblioteca], [Deletado]	NULL	[IdIntegracao], [IdSubGrupo], [Codigo], [Nome], [PorteCirurgico], [ValorOperacao], [NumeroAuxiliares], [PorteAnestesico], [Ativo], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm]
+795	[skanestesio-p01].[dbo].[AtendimentoPreConvenio]	[IdAtendimentoPre], [Deletado]	NULL	NULL
+701	[skanestesio-p01].[dbo].[AtendimentoPreProcedimento]	[IdAtendimentoPre], [Deletado]	NULL	NULL
+618	[skanestesio-p01].[dbo].[AtendimentoPreEquipe]	[IdAtendimentoPre], [Deletado]	NULL	NULL
+568	[skanestesio-p01].[dbo].[AtendimentoPreAvaliacao]	[IdAtendimentoPre], [Deletado]	NULL	[Tipo], [SemComorbidade], [JsonData], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm]
+382	[skanestesio-p01].[dbo].[AtendimentoPreEquipe]	[Deletado]	[IdMedico]	[IdAtendimentoPre]
+357	[skauth-p01].[dbo].[UsuarioUnidadeSistemaPerfil]	[IdUsuario]	NULL	[IdUnidade], [IdSistema], [IdPerfil], [Ativo], [Deletado], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm], [AcessosDiarios], [AcessosTotais], [DataUltimoAcesso], [SkymedToken]
+357	[skauth-p01].[dbo].[UsuarioUnidadeSistemaPerfil]	[IdUsuario]	NULL	NULL
+194	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdEmpresaUnidade], [IdUsuario], [Ativo], [Deletado]	NULL	NULL
+133	[skanestesio-p01].[dbo].[AtendimentoPre]	[Deletado]	[IdAgendamento]	NULL
+84	[skanestesio-p01].[dbo].[AtendimentoAnestesicoEquipe]	[IdAtendimentoAnestesico], [Deletado]	NULL	NULL
+41	[skanestesio-p01].[dbo].[Atendimento]	[IdEmpresaUnidade], [IdPaciente], [Deletado]	NULL	[IdIntegracao], [Status], [MotivoCancelamento], [ProcedimentosRecorrentes], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm], [DataInicio], [DataFim], [Pre], [IdGrupoMedico]
+41	[skanestesio-p01].[dbo].[Atendimento]	[IdEmpresaUnidade], [IdPaciente], [Deletado]	NULL	NULL
+38	[skanestesio-p01].[dbo].[AtendimentoPreEquipe]	[Deletado]	NULL	[IdAtendimentoPre], [IdMedico]
+36	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdEmpresaUnidade], [Deletado]	NULL	[IdIntegracao], [IdUsuario], [IdMedico], [Ativo], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm]
+29	[skanestesio-p01].[dbo].[Paciente]	[IdEmpresaUnidade], [Deletado]	NULL	[Nome]
+20	[skanestesio-p01].[dbo].[IntegracaoAtendimento]	[TipoIntegracao], [Status]	[ModificadoEm]	[IdAtendimento]
+17	[skanestesio-p01].[dbo].[IntegracaoAtendimento]	[TipoIntegracao]	[ModificadoEm]	[IdAtendimento], [Status]
+16	[skanestesio-p01].[dbo].[IntegracaoAtendimento]	[TipoIntegracao], [Status]	NULL	[IdAtendimento], [ModificadoEm]
+12	[skanestesio-p01].[dbo].[IntegracaoAtendimento]	NULL	[Status], [ModificadoEm]	[IdAtendimento], [TipoIntegracao], [Tentativas], [LogUltimaTentativa], [ModificadoPor]
+8	[skanestesio-p01].[dbo].[Atendimento]	[IdEmpresaUnidade], [Status]	[ModificadoEm]	[DataFim]
+8	[skanestesio-p01].[dbo].[Atendimento]	[Status]	[ModificadoEm]	[IdEmpresaUnidade], [DataFim]
+8	[skanestesio-p01].[dbo].[AtendimentoAnestesicoMaterialEquipamento]	[IdAtendimentoAnestesico], [Deletado]	NULL	NULL
+7	[skanestesio-p01].[dbo].[Atendimento]	[IdEmpresaUnidade], [Deletado]	NULL	[IdIntegracao], [IdPaciente], [Status], [MotivoCancelamento], [ProcedimentosRecorrentes], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm], [DataInicio], [DataFim], [Pre], [IdGrupoMedico]
+7	[skanestesio-p01].[dbo].[AtendimentoPreEquipe]	[IdAtendimentoPre], [Deletado]	NULL	[IdMedico]
+4	[skanestesio-p01].[dbo].[AtendimentoAnestesicoProcedimento]	[IdAtendimentoAnestesico], [Deletado]	NULL	NULL
+4	[msdb].[dbo].[backupset]	NULL	[type]	[backup_finish_date], [database_name]
+3	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdEmpresaUnidade], [IdUsuario], [IdMedico]	NULL	NULL
+2	[skanestesio-p01].[dbo].[Atendimento]	[IdEmpresaUnidade], [IdPaciente], [Deletado]	[DataInicio], [DataFim]	[IdIntegracao], [Status], [MotivoCancelamento], [ProcedimentosRecorrentes], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm], [Pre], [IdGrupoMedico]
+2	[skanestesio-p01].[dbo].[Atendimento]	[IdEmpresaUnidade], [IdPaciente], [Deletado]	[DataInicio], [DataFim]	NULL
+2	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdEmpresaUnidade], [IdUsuario], [IdMedico]	NULL	[IdIntegracao], [Ativo], [Deletado], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm], [Login]
+1	[skanestesio-p01].[dbo].[Medico]	[IdEspecialidade], [CRM], [Deletado]	NULL	NULL
+1	[skauth-p01].[dbo].[UsuarioUnidadeSistemaPerfil]	[IdUsuario], [Ativo], [Deletado]	NULL	NULL
+1	[skanestesio-p01].[dbo].[Paciente]	[IdEmpresaUnidade], [Deletado]	NULL	[Identificador]
+1	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdEmpresaUnidade], [IdMedico]	NULL	[IdIntegracao], [IdUsuario], [Ativo], [Deletado], [CriadoPor], [CriadoEm], [ModificadoPor], [ModificadoEm], [Login]
+1	[skanestesio-p01].[dbo].[MedicoUnidadeUsuario]	[IdEmpresaUnidade], [IdMedico]	NULL	NULL
+1	[skanestesio-p01].[dbo].[AtendimentoPre]	[Deletado]	NULL	[IdAtendimento]
+1	[msdb].[dbo].[backupset]	[database_name]	NULL	[backup_start_date]
+1	[skanestesio-p01].[dbo].[IntegracaoAtendimento]	[IdEmpresaUnidade], [Deletado]	[IdAtendimento]	[IdIntegracaoConfig], [TipoIntegracao], [Metadata], [Tentativas], [Status], [LogUltimaTentativa], [ModificadoPor], [ModificadoEm], [CriadoPor], [CriadoEm]
+1	[skanestesio-p01].[dbo].[Paciente]	[IdEmpresaUnidade], [Deletado]	NULL	[Nome], [Identificador]
